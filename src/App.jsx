@@ -6,14 +6,17 @@ import './App.css'
 import TestAPI from './componets/TestAPI'
 import NavBar from './componets/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <BrowserRouter>
       <NavBar/>
-      <TestAPI/>
+    </BrowserRouter>
+      {/* <TestAPI/> */}
 
 
     </>
