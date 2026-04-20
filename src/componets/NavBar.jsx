@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link, Route, Routes} from 'react-router-dom';
-import Players from './Players';
+import Players from './Home';
 import Standings from './Standings';
 import Fixtures from './Fixtures';
 import PaltanWorld from './PaltanWorld';
@@ -19,7 +19,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-          <Nav className="ms-auto">
+          <Nav className="me-auto" className='nav-content'>
             {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link> */}
 
