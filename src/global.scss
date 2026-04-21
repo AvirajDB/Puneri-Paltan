@@ -46,9 +46,43 @@
 .scroll::after{
     content: '';
     width: 2px;
-    height : 240px;
+    height : 140px;
     background-color: azure;
     position: absolute;
     left: 43%;
-    bottom: -170%;
+    bottom: -260%;
+}
+.home-comp1-para{
+    margin : 120px;
+    font-size: 38px;
+    font-weight: 600;
+    color : rgb(255,177,0);
+}
+
+.home-com2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.home-com2 h2{
+   color: rgb(255,177,0); 
+   font-size: 75px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+.enter{
+    width : 280px;
+    height : 44.5625px;
+    background-color: rgb(255,177,0);
+    color: azure;
+    font-size: 20px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    transform: skew(-16deg);
+}
+.home-comp3{
+     margin : 0px 100px;
+     height: 350px;
+     width: 1000px;
+     background-color: black;
+     transform: skew(-16deg);
 }
