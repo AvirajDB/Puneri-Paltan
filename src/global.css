@@ -81,9 +81,23 @@
 }
 
 .home-comp3 {
-  margin: 0px 100px;
+  margin: 0px 125px;
   height: 350px;
   width: 1000px;
-  background-color: black;
   transform: skew(-16deg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ticket {
+  background-color: grey;
+}
+
+.ticket1 {
+  background-color: black;
+}
+
+.ticket-img {
+  height: 300px;
+  transform: skew(16deg) !important;
 }/*# sourceMappingURL=global.css.map */

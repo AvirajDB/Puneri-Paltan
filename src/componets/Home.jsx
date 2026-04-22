@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import hero from '../assets/home-banner-new-design-s12.webp'
+import ticket from '../assets/buy-tickets-homepage_s12.png'
+import ticket1 from '../assets/tickets.png'
+import { Players } from './API'
 
 // import '../'
 
 const Home = () => {
+   
+  const[players , setPlayers] = useState([]);
+
+  useEffect ( ()=>{
+     Players().then(setPlayers).catch(console.error);
+  },[])
+
   return (
     <>
       <div className='hero-img'>
@@ -14,6 +24,10 @@ const Home = () => {
           <div className='home-com2'>
                <h2>Players</h2>
                <div className='home-playerslider'>
+                 {players.map((e)=>(
+                      <img src={e.profile_image} alt={e.name} style={{ width: "120px", height: "120px", objectFit: "cover", borderRadius: "8px" }} />
+                 ))}
+                 
                 <button>p</button>
                 <button>N</button>
                 <button className='enter'>Enter</button>
@@ -21,8 +35,8 @@ const Home = () => {
           </div>
         </div>
         <div className='home-comp3'>
-           
-
+          <div className='ticket' > <img src={ticket} className='ticket-img'/> <button className='enter'>ENTER</button></div>
+          <div className='ticket1'> <img src={ticket1} className='ticket-img'/></div>
         </div>
 
       </div>
