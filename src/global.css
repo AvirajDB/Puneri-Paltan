@@ -7,21 +7,25 @@
   height: 88px;
   width: 1159px;
   background-color: rgba(128, 128, 128, 0.4);
-  margin: 20px 56px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 32px 56px;
   transform: skew(-16deg);
   position: fixed;
   z-index: 1000;
 }
 
 .nav-content {
-  transform: skew(5deg);
-  color: white;
+  transform: skew(16deg);
   height: 100%;
+}
+
+.nav-link {
+  color: azure;
 }
 
 .home-comp1 {
   width: 100%;
-  height: 1200px;
+  height: 1400px;
   background-color: black;
   background-image: url("./assets/description-bg-new.jpg");
   background-size: cover;
@@ -80,6 +84,12 @@
   transform: skew(-16deg);
 }
 
+.home-playerslider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .home-comp3 {
   margin: 0px 125px;
   height: 350px;
@@ -91,13 +101,35 @@
 
 .ticket {
   background-color: grey;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ticket button {
+  position: absolute;
+  left: 55%;
+  top: 30%;
 }
 
 .ticket1 {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ticket-img {
   height: 300px;
   transform: skew(16deg) !important;
+}
+
+.ticket-img1 {
+  height: 200px;
+  transform: skew(16deg) !important;
+}
+
+.home-comp4 img {
+  width: 100%;
 }/*# sourceMappingURL=global.css.map */

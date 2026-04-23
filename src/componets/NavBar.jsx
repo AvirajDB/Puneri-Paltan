@@ -15,19 +15,20 @@ function NavBar() {
    <>
     <Navbar expand="lg" className="bg-body-tertiary" className="nav">
       <Container>
-        <Navbar.Brand href="#home">  <img src={logo}/></Navbar.Brand>
+        <Navbar.Brand href="#home" className='nav-content'>  <img src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-          <Nav className="me-auto" className='nav-content'>
+          <Nav className="me-auto nav-content">
             {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link> */}
 
-            <Nav.Link as={Link} to="/"> Players </Nav.Link>
+            <Nav.Link as={Link} to="/" className='nav-link' > Players </Nav.Link>
             <Nav.Link as={Link} to="/standings"> Standings </Nav.Link>
             <Nav.Link as={Link} to="/fixtures"> Fixtures </Nav.Link>
             <Nav.Link as={Link} to="/paltanworld"> Paltan World </Nav.Link>
             <Nav.Link as={Link} to="/tickets"> Tickets </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
