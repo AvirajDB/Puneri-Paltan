@@ -3,16 +3,16 @@ import hero from '../assets/home-banner-new-design-s12.webp'
 import ticket from '../assets/buy-tickets-homepage_s12.png'
 import banner from '../assets/paltan-world-homepage_s12.png'
 import ticket1 from '../assets/tickets.png'
-import { Players } from './API'
+import { Raiders } from './API'
 
 // import '../'
 
 const Home = () => {
    
-  const[players , setPlayers] = useState([]);
+  const[raiders , setRaiders] = useState([]);
 
   useEffect ( ()=>{
-     Players().then(setPlayers).catch(console.error);
+     Raiders().then(setRaiders).catch(console.error);
   },[])
 
   return (
@@ -28,7 +28,7 @@ const Home = () => {
                
                <div className='home-playerslider'>
                 <div>
-                 {players.map((e)=>(
+                 {raiders.map((e)=>(
                       <img src={e.profile_image} alt={e.name} style={{ height: "220px", objectFit: "cover", borderRadius: "8px" }} />
                  ))}
                 </div>

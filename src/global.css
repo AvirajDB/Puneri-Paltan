@@ -132,4 +132,43 @@
 
 .home-comp4 img {
   width: 100%;
+}
+
+.Sub-hero {
+  background-image: url("./assets/standing-banner-desktop_S1111.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sub-hero h1 {
+  color: rgb(255, 177, 0);
+  font-size: 86px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.players-details {
+  margin: 32px 56px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+}
+
+.players-details h1 {
+  color: rgb(255, 177, 0);
+  font-size: 86px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.players1 {
+  padding: 0px 8px;
 }/*# sourceMappingURL=global.css.map */

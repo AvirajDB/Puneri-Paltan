@@ -12,9 +12,9 @@ const [playerDetails, setPlayerDetails] = useState([])
     const fetchData = async ()=>{
         try{
 
-        const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/player_list?cat_id=1`)
         // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/player_list?cat_id=1`)
-        // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/single_player?id=1`)
+        // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/player_list?cat_id=1`)
+        const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/single_player?id=1`)
         // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/season_list`)
         // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/gallary_list?cat_id=3`)
         // const response = await axios.get(`https://appy.trycatchtech.com/v3/puneri_paltan/single_gallary?id=1`)

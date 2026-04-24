@@ -2,7 +2,11 @@ import React from 'react'
 
 const Tickets = () => {
   return (
-    <div>Tickets</div>
+    <div className='Sub-hero'>
+      
+       <h1>Tickets</h1>  
+
+    </div>
   )
 }
 

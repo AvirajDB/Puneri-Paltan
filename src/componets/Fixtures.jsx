@@ -2,7 +2,11 @@ import React from 'react'
 
 const Fixtures = () => {
   return (
-    <div>Fixtures</div>
+    <div className='Sub-hero'>
+      
+       <h1>Fixtures</h1>  
+
+    </div>
   )
 }
 
